@@ -1,0 +1,177 @@
+@font-face {
+    font-family: aeonik;
+    src: url(assets/AeonikTRIAL-Bold.otf);
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+   
+}
+.navigation{
+    padding: 30px 0;
+    z-index: 5;
+}
+.logo{
+    width: 55px;
+    height: auto;
+    
+}
+.firstpage{
+    width: 100vw;
+    height: 100vh;
+    /* background-image: url(assets/people.png); */
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url(assets/people.png);
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
+}
+
+#navbarSupportedContent{
+    justify-content: center;
+}
+
+.navbar-nav li{
+    padding: 20px;
+    cursor: pointer;
+}
+.nav-el:hover{
+    color: #29B2FF;
+}
+.join{
+    border: none;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px;
+    width: 90px;
+    height: 34px;
+    color: white;
+    background: linear-gradient(276.74deg, #29B2FF -17.67%, #102632 116.64%);
+}
+.join a{
+    color: white;
+    text-decoration: none;
+  }
+
+/* ----------------------------OVERLAY------------------ */
+
+.overlay{
+    background-color: black;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    color: #569BE7;
+    font-size: 9em;
+    z-index: 3;
+}
+
+.text{
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    font-family: 'Aeonik' ,sans-serif;
+    text-align: center;
+    width: 100vw;
+    z-index: 4;
+    animation-delay: 4000ms;
+    animation: transp 7000ms ease-in-out 1;
+    
+}
+
+.text-wrapper{
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    font-family: 'Aeonik' ,sans-serif;
+    text-align: center;
+    color: transparent;
+    background:radial-gradient(27% 27% at 50% 50%, #00000000 0%, rgb(0, 0, 0) 100%) ;
+    width: 100vw;
+    z-index: 5;
+    animation: eye 4000ms ease-in-out 1;
+    transition: 8000ms ease-in-out;
+}
+
+/* =========================ANIMATIONS======================= */
+  
+   .join:hover a {
+    color: #000000;
+    z-index: 3;
+  }
+  .circle {
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+    line-height: 40px;
+    border-radius: 50%;
+    background: #85d8d8;
+    position: absolute;
+    transition: all .5s ease-Out;
+    top: 20px;
+    left: 70px;
+    z-index: 0;
+  }
+  
+  .join:hover .circle {
+    width: 200%;
+    height: 500%;
+    opacity: 1;
+    top: -20px;
+    left: -30px;
+    color: black;
+    z-index: 0;
+  } 
+  
+/* --------------------------------------------------------------------- */
+
+@keyframes eye{
+    0%{
+        background-position: 0%;
+    }
+    15%{
+        background-position: 500px ;
+    }
+    25%{
+        background-position: 2000px;
+    }
+    80%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+
+}
+
+/* @keyframes transp{
+    from{
+        opacity: 1;
+
+    }
+    to{
+        color: transparent;
+        zoom: 500%;
+    }
+} */
+
+/* 0%{
+    background: radial-gradient(27% 27% at 50% 50%, #569BE7 0%, rgba(86, 155, 231, 0) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: ease-in-out 2s;
+}
+25%{
+    background: radial-gradient(50% 50% at 50% 50%, #569BE7 0%, rgba(86, 155, 231, 0) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: ease-in-out 2s;
+}
+40%{
+    background: radial-gradient(90% 90% at 50% 50%, #569BE7 0%, rgba(86, 155, 231, 0) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: ease-in-out 2s;
+} */
