@@ -242,7 +242,7 @@ color: #f2f2f2db;
 }
 .card_lab{
     width: 100vw;
-    padding: 10px;
+    padding: 40px;
     display: flex;
     flex-direction: row;
     background-color: black;
