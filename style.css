@@ -174,7 +174,6 @@ div span{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
     font-family: 'Aeonik',sans-serif;
     
 }
@@ -244,6 +243,7 @@ color: #f2f2f2db;
     width: 100%;
     padding: 40px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     background-color: black;
     justify-content: space-evenly;
