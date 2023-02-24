@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Login | NTL</title>
+        <link rel="shortcut icon" href="resources/favicon.ico">
+        <link rel="stylesheet" href="style.css">
+        <script>
+    function validate()
+    {
+    var username=document.forms["login"]["username"].value;
+    var password=document.forms["login"]["password"].value;
+    if(username=="admin" && password=="password"){
+       alert("Logged In Successfully");
+    }  
+    else{
+        alert("Invalid Username or Password");
+    }
+    
+    
+    }
+            </script>
+
+    </head>
+
+<body>
+    <div class="logo">
+        <img class="logo_img" src="resources/logo.png">
+        </div>
+<div class="login_ui">
+    
+    <h1>Login</h1>
+    <form method="post" name="login">
+        <div class="txt_field">
+            <input type="text" name="username" required>
+            <label>Username</label>
+        </div>
+        <span></span>
+        <div class="txt_field">
+            <input type="password" name="password" required>
+            <label>Password</label>
+        </div>
+        <span></span>
+        <div class="pass">
+            Forgot Password?
+        </div>
+        <input type="submit" value="LOGIN" name="logbtn" onclick="validate()">
+
+    </form>
+</div>
+</body>
+</html>
