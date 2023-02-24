@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="style.css">
         <script src="script.js"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <title>NextTech</title>
 </head>
@@ -33,25 +34,43 @@
                     <a class="nav-link text-light nav-el" href="#">Research</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-light nav-el" href="labs.html">Labs</a>
+                    <a class="nav-link text-light nav-el" href="cards.html">Labs</a>
                   </li>
                 </div>
                 <button class="join">
-                    <a href="#">Join us!</a>
+                    <a href="#">Log IN</a>
                     <div class="circle"></div>
                     
                 </button>
             </div>
+            
+          </div>
+          <!-- <div class="giphy">
+            <img src="assets/gradient.gif" class="giphy-gif"/>
+          </div> -->
         </div>
-        
-    </div>
-    <div class="overlay">
-        <div class="text-wrapper" id="text-wrapper">NextTech Lab</div>
-            <div class="text" id="ntl_text">
-                NextTech Lab
-            </div>
-        
-    </div>
+        <!-- <div class="about" data-aos="fade-down" data-aos-delay="3000" data-aos-duration="1000" data-aos-ease="ease-in-out">
+          <h1>About</h1>
+          <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia tempore odio, voluptates iusto eligendi voluptatum provident quisquam beatae ducimus corrupti, nostrum, ratione harum. Consequatur commodi nulla, esse laudantium harum distinctio.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia tempore odio, voluptates iusto eligendi voluptatum provident quisquam beatae ducimus corrupti, nostrum, ratione harum. Consequatur commodi nulla, esse laudantium harum distinctio.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia tempore odio, voluptates iusto eligendi voluptatum provident quisquam beatae ducimus corrupti, nostrum, ratione harum. Consequatur commodi nulla, esse laudantium harum distinctio.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia tempore odio, voluptates iusto eligendi voluptatum provident quisquam beatae ducimus corrupti, nostrum, ratione harum. Consequatur commodi nulla, esse laudantium harum distinctio.
+
+        </div> -->
     
+        
+
+
+    <div class="overlay" id="overlay" >
+        
+          <div class="text-wrapper" id="text-wrapper">
+            NextTech Lab
+          </div>
+              <div class="text" id="ntl_text">
+                <div id="nxt">
+                  NextTech Lab
+                </div>  
+              </div>
+
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script >AOS.init();</script>
 </body>
 </html>
