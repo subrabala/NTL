@@ -230,9 +230,19 @@ color: #f2f2f2db;
 #people{
     padding: 60px;
 }
+/* cards  */
+.icons img{
+    height: 32px;
+    width: 32px;
+    transition: all 0.2s;
+    
+}
+.icons img:hover{
+    transform: scale(1.3);
+}
 .card_lab{
     width: 100vw;
-    padding: 10px;
+    padding: 40px;
     display: flex;
     flex-direction: row;
     background-color: black;
@@ -252,7 +262,14 @@ color: #f2f2f2db;
     align-items: center;
     color: white;
     border: 1px solid white;
+    transition: all 0.3s;
+    cursor: pointer;
     
+}
+.cards_lab:hover{
+    background-color: #29B2FF;
+    color: white;
+    transform: scale(1.1);
 }
 .image{
     width: 80px;
