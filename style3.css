@@ -4,15 +4,17 @@
   font-family: montserrat;
   box-sizing: border-box;
 }
-h1{
-    color:rgb(181, 180, 180);
-    font-size:70px;
+h1 {
+  color: rgb(181, 180, 180);
+  font-size: 70px;
 }
-p{
-    color:rgb(181, 180, 180);
+p {
+  color: rgb(181, 180, 180);
 }
 body {
+  width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -27,7 +29,7 @@ body {
   object-fit: cover;
 }
 .box {
-  position: relative;
+  position: absolute;
   margin-left: 50%;
   width: 200px;
   height: 200px;
@@ -92,7 +94,7 @@ body {
   width: 30%;
   align-items: left;
   left: 5%;
-  top:18%;
+  top: 18%;
 }
 .hackathons2 {
   position: absolute;
@@ -103,8 +105,8 @@ body {
   right: 10%;
 }
 
-.filler{
-    position: absolute;
-    width: 100%;
-    top:200%;
+.filler {
+  position: absolute;
+  width: 100%;
+  top: 200%;
 }
