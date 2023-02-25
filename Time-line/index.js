@@ -1,5 +1,4 @@
 const items=document.querySelectorAll(".timeline li");
-
 function elementInview(el){
     let rect=el.getBoundingClientRect();
     return (rect.top>=0&&rect.bottom<=(window.innerHeight || document.documentElement.clientHeight));    
