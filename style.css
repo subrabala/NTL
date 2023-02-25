@@ -34,7 +34,14 @@ body{
 .navbar-nav li{
     padding: 20px;
     cursor: pointer;
+    font-family: montserrat;
 }
+
+.navbar-nav li:hover{
+    color:#29B2FF;
+}
+
+
 .nav-el:hover{
     color: #29B2FF;
 }
