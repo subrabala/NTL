@@ -34,7 +34,14 @@ body{
 .navbar-nav li{
     padding: 20px;
     cursor: pointer;
+    font-family: montserrat;
 }
+
+.navbar-nav li:hover{
+    color:#29B2FF;
+}
+
+
 .nav-el:hover{
     color: #29B2FF;
 }
@@ -174,7 +181,6 @@ div span{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
     font-family: 'Aeonik',sans-serif;
     
 }
@@ -230,10 +236,21 @@ color: #f2f2f2db;
 #people{
     padding: 60px;
 }
+/* cards  */
+.icons img{
+    height: 32px;
+    width: 32px;
+    transition: all 0.2s;
+    
+}
+.icons img:hover{
+    transform: scale(1.3);
+}
 .card_lab{
-    width: 100vw;
-    padding: 10px;
+    width: 100%;
+    padding: 40px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     background-color: black;
     justify-content: space-evenly;
@@ -252,7 +269,14 @@ color: #f2f2f2db;
     align-items: center;
     color: white;
     border: 1px solid white;
+    transition: all 0.3s;
+    cursor: pointer;
     
+}
+.cards_lab:hover{
+    background-color: #29B2FF;
+    color: white;
+    transform: scale(1.1);
 }
 .image{
     width: 80px;
