@@ -251,7 +251,6 @@ color: #f2f2f2db;
     padding: 40px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     background-color: black;
     justify-content: space-evenly;
     
@@ -264,7 +263,6 @@ color: #f2f2f2db;
     display: flex;
     flex-direction: column;
     box-shadow: #2d92ccad 0px 0px 50px;
-    
     justify-content: center;
     align-items: center;
     color: white;
