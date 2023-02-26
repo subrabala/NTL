@@ -4,6 +4,7 @@
   font-family: montserrat;
   box-sizing: border-box;
 }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 h1 {
   color: rgb(181, 180, 180);
   font-size: 70px;
